@@ -1,5 +1,6 @@
 import Image from "next/image";
 import clsx from "clsx";
+import { PortableText } from "next-sanity";
 
 export default function CategoryIntroBlock({ data }: { data: any }) {
   const bgClass = clsx({
@@ -38,7 +39,7 @@ export default function CategoryIntroBlock({ data }: { data: any }) {
               MozOsxFontSmoothing: 'grayscale',
             }}
             className="mb-8 tracking-[0.01em] font-galaxie">
-              {data.descriptionOverride}
+             <PortableText value={data.descriptionOverride}/>
             </p>
           )}
 

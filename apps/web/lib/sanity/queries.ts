@@ -1,7 +1,7 @@
 import { groq } from "next-sanity";
 
 export const homePageQuery = groq`
-*[_type == "page" && slug.current == "page"][0]{
+*[_type == "page" ][1]{
   pageBuilder[]{
     _type,
 
